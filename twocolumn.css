@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h4 {
+    color: hsl(243, 87%, 12%);
+    font-family: "Raleway", sans-serif;
+}
+h5 {
+    color: hsl(243, 87%, 12%);
+    font-family: "Open Sans", sans-serif;
+}
+p {
+    font-family: "Open Sans", sans-serif;
+}
+a {
+    font-family: "Open Sans", sans-serif;
+}
+input {
+    font-family: "Raleway", sans-serif;
+}
+
+header {
+    padding: 50px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-box {
+    width: 10%;
+}
+.logo-box img {
+    width: 100%;
+}
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+.nav-bar a {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    color: hsl(238, 22%, 44%);
+}
+.nav-bar a:hover {
+    color: hsl(243, 87%, 12%);
+}
+
+.homepage {
+    padding: 0 60px 60px 60px;
+    display: flex;
+    align-items: center;
+}
+.homepage-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.homepage-left h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    color: hsl(243, 87%, 12%);
+    letter-spacing: 0.5px;
+}
+.homepage-left p {
+    font-family: "Open Sans", sans-serif;
+    color: hsl(243, 87%, 12%);
+    font-size: 15px;
+    width: 62%;
+}
+.homepage-mail {
+    width: 57%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#email {
+    width: 285px;
+    height: 35px;
+    padding: 15px 15px 12px 15px;
+    font-size: 10px;
+}
+#email::placeholder {
+    font-family: "Raleway", sans-serif;
+    color: hsl(0, 0%, 75%);
+}
+.homepage-btn {
+    width: 165px;
+    height: 35px;
+    border: none;
+    border-radius: 2px;
+    background-color: hsl(224, 93%, 58%);
+    box-shadow: 0 1px 2px rgb(171, 170, 170);
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.homepage-btn:hover {
+    opacity: .8;
+}
+.homepage-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.homepage-image {
+    width: 70%;
+}
+.homepage-image img {
+    width: 100%;
+}
+
+.about {
+    padding: 150px 60px 80px 60px;
+    background: url(./images/bg-curve-desktop.svg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.about-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.about-left h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 33px;
+    color: hsl(243, 87%, 12%);
+}
+.about-parags {
+    width: 56%;
+    display: grid;
+    gap: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: hsl(243, 87%, 12%);
+}
+.see-more-link {
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    width: 33%;
+}
+.see-more-link a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+    margin-bottom: 3px;
+}
+.see-more-link a:hover,
+.see-more-link img:hover {
+    color: hsl(159, 77%, 45%);
+    opacity: .8;
+}
+.testimonial {
+    background-color: white;
+    padding: 30px;
+    display: grid;
+    gap: 12px;
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgb(238, 238, 238);
+}
+.comment p {
+    font-size: 11px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile img {
+    width: 12%;
+    border-radius: 50%;
+}
+.details {
+    display: grid;
+    gap: 4px;
+}
+.details h5 {
+    font-size: 10px;
+    letter-spacing: 0.8px;
+}
+.details p {
+    font-size: 8px;
+}
+
+.about-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.about-image {
+    width: 70%;
+}
+.about-image img {
+    width: 100%;
+}
+
+.registration {
+    background-color: hsl(238, 22%, 44%);
+    padding: 100px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reg-left {
+    width: 40%;
+    display: grid;
+    gap: 20px;
+}
+.reg-left h2 {
+    color: white;
+    font-weight: 600;
+}
+.reg-left p {
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+    width: 57%;
+    line-height: 1.5;
+}
+.reg-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#register {
+    width: 425px;
+    height: 35px;
+    padding: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgb(60, 60, 60);
+    font-size: 10px;
+}
+#register::placeholder {
+    font-family: "Raleway", sans-serif;
+    color: hsl(0, 0%, 75%);
+}
+.register-btn {
+    width: 165px;
+    height: 35px;
+    border: none;
+    border-radius: 2px;
+    background-color: hsl(224, 93%, 58%);
+    box-shadow: 0 1px 2px rgb(71, 71, 71);
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.register-btn:hover {
+    background-color: hsl(224, 90%, 69%);
+}
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    padding: 80px 60px;
+    display: grid;
+    gap: 20px;
+}
+.footer-logo {
+    width: 8%;
+}
+.footer-logo img {
+    width: 100%;
+    filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(0%) hue-rotate(46deg) brightness(102%) contrast(105%);
+}
+.footer-contacts {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.contacts p {
+    color: white;
+    font-size: 13px;
+}
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.mail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footer-links {
+    display: flex;
+    gap: 20rem;
+    width: 70%;
+}
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 20px;
+}
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.footer-links a:hover {
+    color: hsl(238, 22%, 44%);
+}
+.footer-socials {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+.footer-socials a {
+    text-decoration: none;
+}
+.footer-socials i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+}
+.footer-socials i:hover {
+    color: hsl(238, 22%, 44%);
+    border: 1px solid hsl(238, 22%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+    header {
+        margin: 0 auto;
+        padding: 25px;
+        align-items: center;
+    }
+    .logo-box {
+        width: 27%;
+    }
+    .logo-box img {
+        width: 100%;
+    }
+    .nav-bar ul {
+        gap: 15px;
+    }
+    .nav-bar a {
+        font-size: 14px;
+    }
+
+    .homepage {
+        flex-direction: column-reverse;
+        padding: 50px 25px;
+        gap: 35px;
+    }
+    .homepage-image {
+        width: 100%;
+    }
+    .homepage-left {
+        width: 97%;
+    }
+    .homepage-left h1 {
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    .homepage-left p {
+        text-align: center;
+        width: auto;
+        line-height: 1.5;
+    }
+    .homepage-mail {
+        display: grid;
+        width: auto;
+        gap: 15px;
+    }
+    #email {
+        width: 320px;
+        height: 40px;
+        padding: 15px;
+        font-size: 12px;
+    }
+    .homepage-btn {
+        width: 320px;
+        height: 40px;
+        margin-bottom: 3rem;
+    }
+
+    .about {
+        padding: 150px 25px;
+        background: url(./images/bg-curve-mobile.svg);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .about-image {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .about-left {
+        width: 97%;
+        margin-bottom: -4rem;
+    }
+    .about-left h1 {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+    .about-parags {
+        font-size: 14px;
+        font-weight: 200;
+        color: hsl(238, 22%, 44%);
+        width: 100%;
+    }
+    #parag2 {
+        margin-bottom: 2rem;
+    }
+    .see-more-link {
+        margin: 0 auto;
+        width: 47%;
+        margin-bottom: 1rem;
+    }
+    .see-more-link a {
+        font-weight: 300;
+    }
+    .testimonial {
+        width: 93%;
+        margin: 0 auto;
+        padding: 22px;
+    }
+
+    .registration {
+        display: grid;
+        margin: 0 auto;
+        padding: 80px 25px;
+        gap: 25px;
+    }
+    .reg-left {
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .reg-left h2 {
+        font-size: 18px;
+    }
+    .reg-left p {
+        font-size: 15px;
+        width: 95%;
+    }
+    #register {
+        margin: 0 auto;
+        width: 250px;
+        padding: 15px 10px;
+    }
+    .register-btn {
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    footer {
+        padding: 60px 25px;
+        gap: 30px;
+    }
+    .footer-logo {
+        width: 50%;
+    }
+    .footer-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .contacts {
+        margin-bottom: 2rem;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-links ul {
+        flex-direction: column;
+    }
+    .footer-socials {
+        justify-content: center;
+    }
+}
